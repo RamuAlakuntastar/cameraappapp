@@ -8,7 +8,7 @@ let recorderQuery = false
 let chunk = []; 
 let permission = {
     video: true,
-    audio: false
+    audio: true
 }
 
 
