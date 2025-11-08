@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 75vw;
+    background-color: black;
+    gap: 20px;
+}
+video {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.recorder-acton {
+    background-color: blue;
+}
+
+.btncont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 60vh;
+    width: 30vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.record-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stop-btn {
+    background-color: red;
+    border-radius: 50%;
+    height: 12vh;
+    width: 6vw;
+    border: solid 4px white;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    z-index: 2;
+}
+
+.stop-btn:active {
+    transform: scale(1.1);
+}
+
+.photo-btn {
+    background-color: white;
+    border-radius: 50%;
+    height: 12vh;
+    width: 6vw;
+    border: solid 4px white;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    z-index: 2;
+}
+
+.photo-btn:active {
+    transform: scale(1.1);
+}
+
+.timer {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+
+    
+}
+
+
+
+.filtercont {
+    height: 60vh;
+    width: 15vw;
+    margin-right: 10px;
+ z-index: 2;
+}
+
+.filter-layout {
+    
+     height: 80vh;
+    width: 75vw;
+    z-index:1;
+    position: absolute;
+    top: 11vh;
+   
+}
+.filter{
+ height: 10vh;
+    width: 100%;
+    background-image: url("https://picsum.photos/seed/picsum/200/300");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.orange {
+  
+    position: relative;
+    background-color: rgba(255, 166, 0, 0.442);
+    background-blend-mode: color-burn;
+
+}
+.red {
+    position: relative;
+    background-color: rgba(255, 0, 0, 0.485);
+    background-blend-mode: color-burn;
+
+}
+
+.green {
+    position: relative;
+    background-color: rgba(0, 128, 0, 0.482);
+    background-blend-mode: color-burn;
+
+}
+
+.purple {
+    position: relative;
+    background-color: rgba(128, 0, 128, 0.379);
+    background-blend-mode: color-burn;
+
+}
+
+.transparent {
+    position: relative;
+    background-color: transparent;
+    background-blend-mode: color-burn;
+
+}
+
+.yellow {
+    position: relative;
+    background-color: rgba(255, 255, 0, 0.426);
+    background-blend-mode: color-burn;
+
+}
